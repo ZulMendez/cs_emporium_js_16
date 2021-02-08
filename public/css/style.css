@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins";
+  margin: 0;
 }
 
 header .contenuNav .contenuNav2 {
@@ -7,37 +8,38 @@ header .contenuNav .contenuNav2 {
 }
 
 header .contenuNav .contenuNav2 h1 {
-  font-family: Poppins-Bold;
+  font-weight: bold;
 }
 
 header .contenuNav .contenuNav2 ul #emporium2 {
-  font-family: Poppins-Bold;
+  font-weight: bold;
   width: auto;
 }
 
-header .contenuNav .contenuNav2 ul li a {
-  text-decoration: none;
-}
-
-header .contenuNav .contenuNav2 ul li a #white {
+header .contenuNav .contenuNav2 ul li #white {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: white;
 }
 
-header .contenuNav .contenuNav2 ul li a #black {
+header .contenuNav .contenuNav2 ul li #black {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: black;
 }
 
-header .contenuNav .contenuNav2 ul li a #connexion {
+header .contenuNav .contenuNav2 ul li #connexion {
   border: none;
-  background-color: #858282;
+  background-color: #969292;
   padding: 10px;
   border-radius: 3px;
+}
+
+header .contenuNav .contenuNav2 ul li #connexion:hover {
+  background-color: #db4141;
+  border-radius: 50px;
 }
 
 .banner {
@@ -74,4 +76,81 @@ header .contenuNav .contenuNav2 ul li a #connexion {
 
 .banner .container .col-4 .slider {
   width: 400px;
+}
+
+.imgService {
+  width: 100%;
+}
+
+.imgService .a {
+  background-image: url("../img/services/service-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imgService .a .service1 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgService .a .service1 h2 {
+  font-size: 40px;
+}
+
+.imgService .a .service1 hr {
+  background-color: white;
+  width: 50%;
+  height: 2px;
+}
+
+.imgService .b {
+  background-image: url("../img/services/service-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imgService .b .service2 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgService .b .service2 h2 {
+  font-size: 40px;
+}
+
+.imgService .b .service2 hr {
+  background-color: white;
+  width: 50%;
+  height: 2px;
+}
+
+.imgService .c {
+  background-image: url("../img/services/slider-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imgService .c .service3 {
+  width: auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgService .c .service3 h2 {
+  font-size: 40px;
+}
+
+.imgService .c .service3 hr {
+  background-color: white;
+  width: 50%;
+  height: 2px;
 }

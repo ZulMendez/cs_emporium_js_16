@@ -12,7 +12,6 @@
 <body>
     <!-- header -->
     <header>
-        
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -20,11 +19,13 @@
             </button>
             <div class="contenuNav collapse navbar-collapse" id="navbarNav">
                 <div class="contenuNav2 d-flex flex-column align-items-center justify-content-center">
-                    <h1 id="emporium1" class="mb-5">emporium.</h1> 
+                    <h1 id="emporium1" class="mb-5">emporium.</h1>
                     <ul class="navbar-nav">
-                        <li id="emporium2" class="d-none px-0"><a href=""><h1 id="h1" class="text-dark">emporium</h1></a></li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <li id="emporium2" class="d-none px-0"><a href="">
+                                <h1 id="h1" class="text-dark">emporium.</h1>
+                            </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PRODUCT</a>
@@ -41,34 +42,113 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTACT</a>
                         </li>
-                        <li>
-                            <a href="" class="d-flex align-items-center">
-                                <button id="white" class="m-3"></button>
-                                <button id="black" class="m-3"></button>
-                                <button id="connexion" class="text-white">CONNEXION</button>
-                            </a>
+                        <li class="boutons d-flex align-items-center">
+                            <button id="white" class="ml-3"></button>
+                            <button id="black" class="mr-3 ml-3"></button>
+                            <button id="connexion" class="text-white">CONNEXION</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- fin navbar -->
     </header>
-    <!-- banner  -->
+    <!-- section 1 - banner  -->
     <section class="banner" id="section1">
         <div class="container">
-            <div class="col-8 d-flex flex-column justify-content-center">
-                <h1 class="titreBanner mt-4 mb-2">Shop at</h1>
-                <img class="mb-3" src="./public/img/logo.png" alt="logo">
-                <p>A wonderful serenity has taken possession of my my entire soul, like these sweet mornings of spring which I enjoy with my.</p>
-                <button class="bg-danger mb-5 text-white text-uppercase">sale items</button>
+            <div class="row">
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h1 class="titreBanner mt-4 mb-2">Shop at</h1>
+                    <img class="mb-3" src="./public/img/logo.png" alt="logo">
+                    <p>A wonderful serenity has taken possession of my my entire soul, like these sweet mornings of
+                        spring which I enjoy with my.</p>
+                    <button class="bg-danger mb-5 text-white text-uppercase">sale items</button>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img class="slider" src="./public/img/slider-1.jpg" alt="slider">
+                </div>
             </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-                <img class="slider" src="./public/img/slider-1.jpg" alt="slider">
+            <!-- modale -->
+            <div class="row">
+                <div class="modal col-12 d-flex justify-content-center align-items-center mb-4">
+                    <div class="formulaire d-none">
+                        <div class="row d-flex flex-wrap justify-content-center">
+                            <div id="connecte" class="col-6 d-flex flex-column">
+                                <button id="sign" class="bg-white border-0 mt-5">Log in</button>
+                                <hr class="hr1">
+                                <input id="input1" type="text" placeholder="Email Address" class="inp1">
+                                <input id="input2" type="text" placeholder="Password" class="mt-3">
+                                <button id="btn1" class="bg-info border-0 mt-3 mr-auto">Log in</button>
+                                <hr class="hr2 mt-4 mb-4">
+                                <button id="btn2" class="bg-danger">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fab fa-google text-white mr-2"></i>
+                                        <p class="text-white">Connect with Google</p>
+                                    </div>
+                                </button>
+                                <button id="btn3" class="bg-primary mt-2 mb-5">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fab fa-facebook-f text-white mr-2"></i>
+                                        <p class="text-white">Connect with Facebook</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div id="inscrit" class="col-6 d-flex flex-column pb-5">
+                                <button id="inscription" class="bg-white border-0 mt-5">Register</button>
+                                <hr>
+                                <div class="row d-none">
+                                    <div class="col-6">
+                                        <input class="b" type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="a" type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <input id="input" class="mt-3 d-none" type="text" placeholder="Email Address">
+                                <div id="row2" class="row d-none mt-3 mb-3">
+                                    <div class="col-6">
+                                        <input class="c" type="text" placeholder="Password">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="d" type="text" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                                <button id="btn" class="bg-info d-none text-white">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
+    <!-- fin banner -->
+    <!-- section 2 - services -->
+    <section class="services">
+        <div class="container-fluid">
+            <div class="row imgService">
+                <div class="a col-4 mt-5">
+                    <div class="service1">
+                        <h2 class="text-white text-center mt-8">Living Room</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="b col-4 mt-5">
+                    <div class="service2">
+                        <h2 class="text-white text-center mt-8">Sale Items</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="c col-4 mt-5">
+                    <div class="service3">
+                        <h2 class="text-white text-center">Clothes</h2>
+                        <hr class="text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin section 2 -->
+    
 
 
 
