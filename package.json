@@ -1,7 +1,6 @@
 {
   "name": "emporium-projet-js",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.0"
-  }
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZulMendez/cs_emporium_js_16.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZulMendez/cs_emporium_js_16/issues"
+  },
+  "homepage": "https://github.com/ZulMendez/cs_emporium_js_16#readme",
+  "description": ""
 }

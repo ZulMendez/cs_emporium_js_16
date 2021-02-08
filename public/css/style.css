@@ -1,0 +1,41 @@
+body {
+  font-family: "Poppins";
+}
+
+header .contenuNav .contenuNav2 {
+  width: 100%;
+}
+
+header .contenuNav .contenuNav2 h1 {
+  font-family: Poppins-Bold;
+}
+
+header .contenuNav .contenuNav2 ul #emporium2 {
+  font-family: Poppins-Bold;
+  width: auto;
+}
+
+header .contenuNav .contenuNav2 ul li a {
+  text-decoration: none;
+}
+
+header .contenuNav .contenuNav2 ul li a #white {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+header .contenuNav .contenuNav2 ul li a #black {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+header .contenuNav .contenuNav2 ul li a #connexion {
+  border: none;
+  background-color: #858282;
+  padding: 10px;
+  border-radius: 3px;
+}
