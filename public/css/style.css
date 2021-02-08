@@ -39,3 +39,39 @@ header .contenuNav .contenuNav2 ul li a #connexion {
   padding: 10px;
   border-radius: 3px;
 }
+
+.banner {
+  position: relative;
+  background-color: #F3F3F3;
+}
+
+.banner .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner .container .col-8 .titreBanner {
+  font-size: 60px;
+  color: #DD4545;
+}
+
+.banner .container .col-8 p {
+  opacity: 0.7;
+}
+
+.banner .container .col-8 img {
+  width: 400px;
+}
+
+.banner .container .col-8 button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.banner .container .col-4 .slider {
+  width: 400px;
+}
