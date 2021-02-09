@@ -30,16 +30,11 @@ header .contenuNav .contenuNav2 ul li #black {
   background-color: black;
 }
 
-header .contenuNav .contenuNav2 ul li #connexion {
+header .contenuNav .contenuNav2 ul li .connexion {
   border: none;
   background-color: #969292;
   padding: 10px;
-  border-radius: 3px;
-}
-
-header .contenuNav .contenuNav2 ul li #connexion:hover {
-  background-color: #db4141;
-  border-radius: 50px;
+  border-radius: 6px;
 }
 
 .banner {
@@ -179,11 +174,9 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
 }
 
 .cartes .row .col-4 div .produit:hover::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f06e" " View Details";
+  content: "View Details";
   font-weight: 900;
   position: absolute;
-  height: 0;
   background-color: black;
   color: white;
   display: flex;
@@ -196,18 +189,16 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
 }
 
 .cartes .row .col-4 div .produit:hover::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f291" "Add to cart";
+  content: "Add to cart";
   font-weight: 900;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 0;
   background-color: #DD4545;
   color: white;
   bottom: 0;
-  animation: magie 0.5s;
+  animation: produit 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
   left: 50%;
@@ -253,6 +244,7 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,4 +357,17 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
   color: #a5a2a2;
   opacity: 0.7;
   font-size: 25px;
+}
+
+@media (max-width: 992px) {
+  .imgService .a .service1 {
+    height: auto;
+  }
+  .imgService .b .service2 {
+    height: auto;
+  }
+  .imgService .c .service3 {
+    height: 220px;
+    padding-top: 50px;
+  }
 }

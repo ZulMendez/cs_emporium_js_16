@@ -21,9 +21,9 @@
                 <div class="contenuNav2 d-flex flex-column align-items-center justify-content-center">
                     <h1 id="emporium1" class="mb-5">emporium.</h1>
                     <ul class="navbar-nav">
-                        <li id="emporium2" class="d-none px-0"><a href="">
-                                <h1 id="h1" class="text-dark">emporium.</h1>
-                            </a></li>
+                        <li id="emporium2" class="d-none px-0">
+                            <h1 id="h1" class="text-dark">emporium.</h1>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">HOME</a>
                         </li>
@@ -45,7 +45,7 @@
                         <li class="boutons d-flex align-items-center">
                             <button id="white" class="ml-3"></button>
                             <button id="black" class="mr-3 ml-3"></button>
-                            <button id="connexion" class="text-white">CONNEXION</button>
+                            <button class="connexion text-white">CONNEXION</button>
                         </li>
                     </ul>
                 </div>
@@ -57,23 +57,23 @@
     <section class="banner" id="section1">
         <div class="container">
             <div class="row">
-                <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="col-8 col-sm-12 col-md-12 col-lg-8 d-flex flex-column justify-content-center">
                     <h1 class="titreBanner mt-4 mb-2">Shop at</h1>
                     <img class="mb-3" src="./public/img/logo.png" alt="logo">
                     <p>A wonderful serenity has taken possession of my my entire soul, like these sweet mornings of
                         spring which I enjoy with my.</p>
                     <button class="bg-danger mb-5 text-white text-uppercase">sale items</button>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
                     <img class="slider" src="./public/img/slider-1.jpg" alt="slider">
                 </div>
             </div>
             <!-- modale -->
             <div class="row">
-                <div class="modal col-12 d-flex justify-content-center align-items-center mb-4">
+                <div class="modal col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center mb-4">
                     <div class="formulaire d-none">
                         <div class="row d-flex flex-wrap justify-content-center">
-                            <div id="connecte" class="col-6 d-flex flex-column">
+                            <div id="connecte" class="col-6 col-sm-12 col-md-12 col-lg-6 d-flex flex-column">
                                 <button id="sign" class="bg-white border-0 mt-5">Log in</button>
                                 <hr class="hr1">
                                 <input id="input1" type="text" placeholder="Email Address" class="inp1">
@@ -93,23 +93,23 @@
                                     </div>
                                 </button>
                             </div>
-                            <div id="inscrit" class="col-6 d-flex flex-column pb-5">
+                            <div id="inscrit" class="col-6 col-sm-12 col-md-12 col-lg-6 d-flex flex-column pb-5">
                                 <button id="inscription" class="bg-white border-0 mt-5">Register</button>
                                 <hr>
                                 <div class="row d-none">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
                                         <input class="b" type="text" placeholder="First Name">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
                                         <input class="a" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <input id="input" class="mt-3 d-none" type="text" placeholder="Email Address">
                                 <div id="row2" class="row d-none mt-3 mb-3">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
                                         <input class="c" type="text" placeholder="Password">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
                                         <input class="d" type="text" placeholder="Confirm Password">
                                     </div>
                                 </div>
@@ -126,22 +126,22 @@
     <section class="services">
         <div class="container-fluid">
             <div class="row imgService">
-                <div class="a col-4 mt-5">
+                <div class="a col-4 col-sm-12 col-md-12 col-lg-4 mt-5">
                     <div class="service1">
-                        <h2 class="text-white text-center mt-8">Living Room</h2>
+                        <h2 class="text-white text-center mt-5 mt-md-8">Living Room</h2>
                         <hr>
                     </div>
                 </div>
-                <div class="b col-4 mt-5">
+                <div class="b col-4 col-sm-12 col-md-12 col-lg-4 mt-5">
                     <div class="service2">
-                        <h2 class="text-white text-center mt-8">Sale Items</h2>
+                        <h2 class="text-white text-center mt-5 mt-md-8">Sale Items</h2>
                         <hr>
                     </div>
                 </div>
-                <div class="c col-4 mt-5">
+                <div class="c col-4 col-sm-12 col-md-12 col-lg-4 mt-5">
                     <div class="service3">
-                        <h2 class="text-white text-center">Clothes</h2>
-                        <hr class="text-center">
+                        <h2 class="text-white text-center mt-5 mt-md-5">Clothes</h2>
+                        <hr class="text-center mt-md-3">
                     </div>
                 </div>
             </div>
@@ -271,75 +271,100 @@
     </section>
     <!-- fin section 4 - discover-->
     <!-- section 5 - carrousel -->
-    <section id="section5" class="carrousel d-flex justify-content-center flex-column">
+    <section class="carrousel">
         <h2 id="fashion" class="text-uppercase text-center mt-5 mb-5">Hot Fashion Products</h2>
-        <div class="slider container">
-            <div class="produit d-flex justify-content-center align-items-center">
-                <div class="article">
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa">
-                    <span id="un" class="text-capitalize mt-4">luxury sofa</span>
-                    <span class="text-danger">$600.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
-                    <div class="row">
-                        <div class="col-6">
-                            <button class="bg-danger text-white text-uppercase">sale!</button>
+        <div class="container-fluid">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-md-3  active">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=1"
+                                        alt="slide 1">
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <span id="deux" class="text-capitalize">leather gloves</span>
-                            <div class="">
-                                <del class="text-secondary">$34.00</del>
-                                <span class="text-danger">$27.00</span>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 3" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=2"
+                                        alt="slide 2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 4" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=3"
+                                        alt="slide 3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 5" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=4"
+                                        alt="slide 4">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 6" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=5"
+                                        alt="slide 5">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 7" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=6"
+                                        alt="slide 6">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 8" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=7"
+                                        alt="slide 7">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3  ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 2" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=8"
+                                        alt="slide 8">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
-                    <span id="trois" class="text-capitalize mt-4">colorful bowl</span>
-                    <span class="text-danger mt-1">$18.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-bag.jpg" alt="bag">
-                    <div class="row">
-                        <div class="col-6">
-                            <button class="bg-danger mt-1 text-white text-uppercase">sale!</button>
-                        </div>
-                        <div class="col-6">
-                            <span id="quatre" class="text-capitalize">women bag</span>
-                            <div class="">
-                                <del class="text-secondary">$420.00</del>
-                                <span class="text-danger">$350.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="tshirt">
-                    <span id="cinq" class="text-capitalize mt-4">minimal t-shirt</span>
-                    <span class="text-danger mt-1">$15.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-plates.jpg" alt="plates">
-                    <span id="six" class="text-capitalize mt-4">plates set</span>
-                    <span class="text-danger mt-1">$30.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="modern">
-                    <span id="sept" class="text-capitalize mt-4">modern-sofa</span>
-                    <span class="text-danger mt-1">$900.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-bed.jpg" alt="bed">
-                    <span id="huit" class="text-capitalize mt-4">bed linen</span>
-                    <span class="text-danger mt-1">$79.00</span>
-                </div>
-                <div class="article">
-                    <img src="./public/img/products_mini/product-shoes.jpg" alt="shoes">
-                    <span id="neuf" class="text-capitalize mt-4">minimal shoes</span>
-                    <span class="text-danger mt-1">$60.00</span>
-                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
@@ -347,7 +372,7 @@
     <!-- section 6 - infos -->
     <section id="section6 container" class="infos">
         <div class="row">
-            <div class="col-4 mb-3">
+            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
                 <div class="contenu bg-banner d-flex flex-column justify-content-center align-items-center">
                     <i class="far fa-check-circle mb-5 mt-3"></i>
                     <h2 class="text-uppercase text-center mb-5">trusted by 10,000+ customers</h2>
@@ -355,7 +380,7 @@
                     <button class="mb-5 py-2 bg-secondary text-white text-uppercase">learn more</button>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
                 <div class="contenu bg-danger d-flex flex-column justify-content-center align-items-center">
                     <i class="fas fa-paper-plane text-white mb-5 mt-3"></i>
                     <h2 class="text-uppercase text-white mb-5">very fast shipping</h2>
@@ -363,7 +388,7 @@
                     <button class="mb-5 py-2 bg-white text-uppercase">learn more</button>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
                 <div class="contenu bg-banner d-flex flex-column justify-content-center align-items-center">
                     <i class="far fa-check-circle mb-5 mt-3"></i>
                     <h2 class="text-uppercase text-center mb-5">trusted by 10,000+ customers</h2>
@@ -378,19 +403,19 @@
     <footer class="footer">
         <div class="footer1 bg-footer container-fluid d-flex justify-content-center">
             <div class="row">
-                <div class="col-4 d-flex flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white mb-3">about us</h4>
+                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-md-5">about us</h4>
                     <p class="mb-5">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of</p>
                 </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white mb-3 mt-5">recents posts</h4>
+                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-5">recents posts</h4>
                     <p class="text-capitalize text-white mb-3">> hello world</p>
                     <p class="text-capitalize text-white mb-3">> wonderful serenity has taken</p>
                     <p class="text-capitalize text-white mb-3">> in my soul and absorb its power</p>
                     <p class="text-capitalize text-white mb-5">> i heard the buzz of the little</p>
                 </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white mb-3 mt-5">tag cloud</h4>
+                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-5">tag cloud</h4>
                     <div class="btn d-flex">
                         <button class="px-2 py-1">business</button>
                         <button class="px-2 py-1">confidence</button>
@@ -417,7 +442,6 @@
                 <p class="copy text-uppercase mt-3">&copy; 2020 goodlayers, all right reserved</p>
             </div>
         </div>
-    </footer> 
     </footer> 
 
 
