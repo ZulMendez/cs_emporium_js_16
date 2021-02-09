@@ -309,3 +309,31 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
   font-size: 13px;
   opacity: 0.6;
 }
+
+.infos {
+  margin-top: 50px;
+}
+
+.infos .row .col-4 .contenu {
+  height: 500px;
+}
+
+.infos .row .col-4 i {
+  font-size: 35px;
+}
+
+.infos .row .col-4 h2 {
+  font-size: 30px;
+}
+
+.infos .row .col-4 p {
+  font-size: 17px;
+  padding: 0 100px 0 100px;
+}
+
+.infos .row .col-4 button {
+  height: 50px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+}
