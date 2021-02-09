@@ -154,3 +154,119 @@ header .contenuNav .contenuNav2 ul li #connexion:hover {
   width: 50%;
   height: 2px;
 }
+
+.cartes {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.cartes .row {
+  display: flex;
+  justify-content: center;
+}
+
+.cartes .row .col-4 div {
+  width: 98%;
+}
+
+.cartes .row .col-4 div .produit {
+  position: relative;
+}
+
+.cartes .row .col-4 div .produit img {
+  max-width: 100%;
+  transition: all 2s;
+}
+
+.cartes .row .col-4 div .produit:hover::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f06e" " View Details";
+  font-weight: 900;
+  position: absolute;
+  height: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  animation: produit 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+}
+
+.cartes .row .col-4 div .produit:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f291" "Add to cart";
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  background-color: #DD4545;
+  color: white;
+  bottom: 0;
+  animation: magie 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+  left: 50%;
+}
+
+.cartes .row .col-4 div .prodBouton {
+  position: absolute;
+  margin-top: 125px;
+  justify-content: center;
+  display: none;
+}
+
+.cartes .row .col-4 div span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.cartes .row .col-4 div .row .col-6 button {
+  height: 50px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+.cartes .row .col-4 div .row .col-6 .row del {
+  color: #545557;
+  opacity: 0.6;
+}
+
+.cartes .row .col-4 div .row .col-6 .row del span {
+  font-size: 17px;
+}
+
+.cartes .row .col-4 div .row .col-6 .row span {
+  font-size: 17px;
+}
+
+.discover {
+  background-image: url("../img/cta-bg.jpg");
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.discover button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
