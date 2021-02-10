@@ -3,34 +3,42 @@ body {
   margin: 0;
 }
 
-header .contenuNav .contenuNav2 {
-  width: 100%;
+header h1 {
+  text-align: center;
+  margin-top: 10px;
 }
 
-header .contenuNav .contenuNav2 h1 {
-  font-weight: bold;
+header nav .collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  margin-top: 25px;
 }
 
-header .contenuNav .contenuNav2 ul #emporium2 {
-  font-weight: bold;
-  width: auto;
+header nav .collapse ul {
+  margin: 10px;
 }
 
-header .contenuNav .contenuNav2 ul li #white {
+header nav .collapse ul li {
+  margin: 10px;
+}
+
+header nav .collapse ul li #white {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: white;
 }
 
-header .contenuNav .contenuNav2 ul li #black {
+header nav .collapse ul li #black {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: black;
 }
 
-header .contenuNav .contenuNav2 ul li .connexion {
+header nav .collapse ul li .connexion {
   border: none;
   background-color: #969292;
   padding: 10px;
@@ -67,6 +75,7 @@ header .contenuNav .contenuNav2 ul li .connexion {
   border: none;
   border-radius: 50px;
   text-decoration: none;
+  z-index: 10;
 }
 
 .banner .container .col-4 .slider {
@@ -171,44 +180,6 @@ header .contenuNav .contenuNav2 ul li .connexion {
 .cartes .row .col-4 div .produit img {
   max-width: 100%;
   transition: all 2s;
-}
-
-.cartes .row .col-4 div .produit:hover::before {
-  content: "View Details";
-  font-weight: 900;
-  position: absolute;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  animation: produit 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
-}
-
-.cartes .row .col-4 div .produit:hover::after {
-  content: "Add to cart";
-  font-weight: 900;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #DD4545;
-  color: white;
-  bottom: 0;
-  animation: produit 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
-  left: 50%;
-}
-
-.cartes .row .col-4 div .prodBouton {
-  position: absolute;
-  margin-top: 125px;
-  justify-content: center;
-  display: none;
 }
 
 .cartes .row .col-4 div span {
@@ -320,7 +291,7 @@ header .contenuNav .contenuNav2 ul li .connexion {
 
 .infos .row .col-4 p {
   font-size: 17px;
-  padding: 0 100px 0 100px;
+  padding: 0 auto 0 auto;
 }
 
 .infos .row .col-4 button {
