@@ -1,11 +1,18 @@
 .hot
-    color: #e01616
+    color: #000000
+    @include media-breakpoint-only(md)
+        margin: 20px 0
+    @include media-breakpoint-down(sm)
+        margin: 20px 0    
     p,span
         font-weight: bold
     p
         padding-top: 20px
     img
         height: 150px
+        @include media-breakpoint-down(sm)
+            width: auto
+            height: 100px
     button
         border-radius: 100%
         padding: 20px
@@ -13,3 +20,7 @@
         .carousel
             width: 50vw
             overflow: hidden
+            @include media-breakpoint-only(md)
+                width: auto
+            @include media-breakpoint-down(sm)
+                width: 150vw

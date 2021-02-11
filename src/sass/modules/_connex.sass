@@ -9,10 +9,56 @@
     top: 10vh
     z-index: 999
     display: none
-    font-family: Poppins-Light
+    @include media-breakpoint-only(md)
+        left: 5vw
+    @include media-breakpoint-down(sm)
+        left: 3vw
+        width: auto
+        height: auto
+    .boutForm
+        button
+            border: none
+            background-color: #e25a5a
+            padding: 10px
+            font-size: 20px
+            @include media-breakpoint-down(sm)
+                font-size: 13px
+    #modale1
+        .champ
+            .email
+                h5
+                    font-size: 25px
+                    @include media-breakpoint-down(sm)
+                        font-size: 17px
+                .btnshop
+                    border: none
+                    border-radius: 5px
+                    padding: 10px 15px
+                    font-size: 17px
+                    background-color: #55b862
+                    @include media-breakpoint-down(sm)
+                        font-size: 15px
+    #modale2
+        .champ
+            .email
+                h5
+                    font-size: 25px
+                    @include media-breakpoint-down(sm)
+                        font-size: 17px
+                .form-check
+                    label
+                        font-size: 20px
+                    @include media-breakpoint-down(sm)
+                        font-size: auto
+            .btn
+                border: none
+                border-radius: 5px
+                padding: 10px 15px
+                font-size: 20px
+                background-color: #55b862
     i
-        font-size: 24px
+        font-size: 25px
     .fb
-        color: #4021f0df  
+        color: #2731b9df  
     .snap
         color: #fbff26

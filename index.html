@@ -27,7 +27,7 @@
                         <h1 id="h1" class="text-dark">emporium.</h1>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">HOME<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PRODUCT</a>
@@ -59,9 +59,9 @@
         <!-- modal connexion -->
         <div id="connexion" class="co">
             <!-- entete avec btn fermer  -->
-            <button class="fermer bg-rouge text-white float-right ">x</button>
-            <h1 class="font-weight-bold">emporium.</h1>
-            <div class=" d-flex justify-content-center align-items-center">
+            <button class="fermer bg-danger text-white float-right">x</button>
+            <h1 class="font-weight-bold mx-3">emporium.</h1>
+            <div class="boutForm d-flex justify-content-center align-items-center">
                 <button type="button" class="btn connexion btn-rouge mx-1 text-white">Connexion</button>
                 <button type="button" class="btn inscription btn-rouge text-white">Inscription</button>
             </div>
@@ -70,16 +70,16 @@
                 <div class="champ my-2 d-flex flex-column">
                     <div class="email col-10 offset-md-1">
                         <h5>Email address</h5>
-                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <input type="text" placeholder="abc@gmail.com" class="col-10">
                         <p class="text-muted">We'll never share your email with anynone else.</p>
                         <div class="mdp">
                             <h5>Password</h5>
-                            <input type="password" placeholder="**********" class="col-10">
+                            <input type="password" placeholder="*******" class="col-10">
                         </div>
                         <div class="submit my-2">
                             <input type="checkbox" value="Check"> Check me out
                         </div>
-                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                        <button type="button" class="btnshop btn-outline-banner text-white mx-3">Submit</button>
                     </div>
                     <div class="reseaux my-3 mx-auto">
                         <ul class=" list-inline">
@@ -96,15 +96,15 @@
                 <div class="champ my-2 d-flex flex-column align-items-center">
                     <div class="email col-10 offset-md-1">
                         <h5>Email address</h5>
-                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <input type="text" placeholder="abc@gmail.com" class="col-10">
                         <p class="text-muted">We'll never share your email with anynone else.</p>
                         <div class="mdp my-2">
                             <h5>Password</h5>
-                            <input type="password" placeholder="********" class="col-10">
+                            <input type="password" placeholder="*******" class="col-10">
                         </div>
                         <div class="confirm my-2">
                             <h5>Confirm your password</h5>
-                            <input type="password" placeholder="********" class="col-10">
+                            <input type="password" placeholder="*******" class="col-10">
                         </div>
                         <div class="form-check my-2 ">
                             <input type="checkbox" value="femme">
@@ -115,7 +115,7 @@
                             <label for="form-check-label">Homme</label>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <button type="button" class="btn btn-outline-banner text-white mx-3">Inscription</button>
                     <div class="reseaux my-3 mx-auto">
                         <ul class=" list-inline">
                             <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
@@ -413,40 +413,38 @@
     <footer class="footer">
         <div class="footer1 bg-footer container-fluid d-flex justify-content-center">
             <div class="row">
-                <div
-                    class="col-lg-5 col-md-12 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-md-5">about us</h4>
+                <div class="cont col-lg-5 col-md-12 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-sm-center mb-3 mt-md-5">about us</h4>
                     <p class="mb-5">A wonderful serenity has taken possession of my entire soul, like these sweet
                         mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
                         existence in this spot, which was created for the bliss of</p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-5">recents posts</h4>
+                <div class="cont col-lg-3 col-md-12 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-sm-center mb-3 mt-5">recents posts</h4>
                     <p class="text-capitalize text-white mb-3">> hello world</p>
                     <p class="text-capitalize text-white mb-3">> wonderful serenity has taken</p>
                     <p class="text-capitalize text-white mb-3">> in my soul and absorb its power</p>
                     <p class="text-capitalize text-white mb-5">> i heard the buzz of the little</p>
                 </div>
-                <div
-                    class="cont col-lg-4 col-md-6 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-5">tag cloud</h4>
+                <div class="cont col-lg-4 col-md-12 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-sm-center mb-3 mt-2">tag cloud</h4>
                     <div class="btn p-0 m-0">
-                        <button class="px-2 py-1">business</button>
-                        <button class="px-2 py-1">confidence</button>
-                        <button class="px-2 py-1">gadgets</button>
+                        <button class="btn-outline-banner px-2 py-1">business</button>
+                        <button class="btn-outline-banner px-2 py-1">confidence</button>
+                        <button class="btn-outline-banner px-2 py-1">gadgets</button>
                     </div>
                     <div class="btn p-0 m-0">
-                        <button class="px-2 py-1">identity</button>
-                        <button class="px-2 py-1">logo</button>
-                        <button class="px-2 py-1">photography</button>
+                        <button class="btn-outline-banner px-2 py-1">identity</button>
+                        <button class="btn-outline-banner px-2 py-1">logo</button>
+                        <button class="btn-outline-banner px-2 py-1">photography</button>
                     </div>
                     <div class="btn p-0 m-0">
-                        <button class="px-2 py-1">time</button>
-                        <button class="px-2 py-1">trips</button>
-                        <button class="px-2 py-1">works</button>
+                        <button class="btn-outline-banner px-2 py-1">time</button>
+                        <button class="btn-outline-banner px-2 py-1">trips</button>
+                        <button class="btn-outline-banner px-2 py-1">works</button>
                     </div>
                     <div class="btn p-0 m-0 mb-3">
-                        <button class="px-2 py-1">work space</button>
+                        <button class="btn-outline-banner px-2 py-1">work space</button>
                     </div>
                 </div>
             </div>
