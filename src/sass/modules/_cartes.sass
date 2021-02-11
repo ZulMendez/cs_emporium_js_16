@@ -1,6 +1,7 @@
 .cartes
-        padding-left: 15%
-        padding-right: 15%
+    padding-left: 15%
+    padding-right: 15%
+    .container
         .row
             display: flex
             justify-content: center
@@ -9,18 +10,47 @@
                         width: 98%
                         .produit
                             position: relative
+                            overflow: hidden
+                            @include media-breakpoint-down(sm)
+                                width: 80px
+                                height: 80px
                             img
                                 max-width: 100%
-                                transition: all 2s
-                        // .prodBouton
-                        //     position: absolute
-                        //     margin-top: 125px
-                        //     justify-content: center
-                        //     display: none
+                            &:hover
+                                transform: scale(1.1)
+                                transition: all 1s
+                                &::before
+                                    content: "View Details"
+                                    position: absolute
+                                    background-color: #000
+                                    text-align: center
+                                    color: white
+                                    opacity: 0.8
+                                    bottom: 0
+                                    animation: produit 0.5s 
+                                    animation-fill-mode: forwards
+                                    max-width: 50%
+                                &::after
+                                    content: "Add to Card"
+                                    position: absolute
+                                    background-color: #DD4545
+                                    text-align: center
+                                    color: white
+                                    opacity: 0.8
+                                    bottom: 0
+                                    animation: produit 0.5s 
+                                    animation-fill-mode: forwards
+                                    max-width: 50%
+                                    left: 50%
                         span
                             font-weight: bold
                             font-size: 17px
+                            @include media-breakpoint-down(md)
+                                font-size: 20px
+                            @include media-breakpoint-down(sm)
+                                font-size: 15px
                         .row
+                            display: flex
                             .col-6
                                 button
                                     height: 50px
@@ -28,11 +58,31 @@
                                     border: none
                                     border-radius: 50%
                                     margin: 5px 0
-                                .row
+                                    @include media-breakpoint-down(md)
+                                        margin: auto
+                                    @include media-breakpoint-down(sm)
+                                        margin: auto
+                                        height: 30px
+                                        width: 40px
+                                .promo
+                                    @include media-breakpoint-down(sm)
+                                        display: flex
+                                        // flex-direction: column
                                     del
-                                        // color: #545557
-                                        // opacity: 0.6
-                                        span
-                                            font-size: 17px
-                                    span
-                                        font-size: 17px
+                                        color: #545557
+                                        opacity: 0.6
+                        .prix 
+                            font-size: 17px
+                            @include media-breakpoint-down(sm)
+                                font-size: 12px
+                                    // .prix 
+                                    //     font-size: 17px
+                                    //     @include media-breakpoint-down(sm)
+                                    //         font-size: 12px
+@keyframes produit
+    0%
+        width: 100%
+        height: 0%
+    100%
+        width: 100%
+        height: 25%

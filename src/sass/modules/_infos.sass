@@ -1,13 +1,17 @@
 .infos
     margin-top: 50px
     .row
-        .col-4
+        .carteInfo
+            @include media-breakpoint-down(sm)
+                display: block
             .contenu
                 height: 500px
             i
                 font-size: 35px
             h2
                 font-size: 30px
+                @include media-breakpoint-down(sm)
+                    text-align: center
             p
                 font-size: 17px
                 padding: 0 auto 0 auto

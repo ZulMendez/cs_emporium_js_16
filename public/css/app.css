@@ -20808,19 +20808,43 @@ body {
 
 header h1 {
   text-align: center;
-  margin-top: 10px;
+  font-size: 50px;
+}
+
+@media (max-width: 767.98px) {
+  header h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header nav .navbar-toggler {
+    background-color: #e26262;
+    margin-right: 700px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header nav .navbar-toggler {
+    background-color: #e26262;
+  }
 }
 
 header nav .collapse {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px;
-  margin-top: 25px;
 }
 
 header nav .collapse ul {
-  margin: 10px;
+  margin: auto;
 }
 
 header nav .collapse ul li {
@@ -20841,17 +20865,27 @@ header nav .collapse ul li #black {
   background-color: black;
 }
 
-header nav .collapse ul li .connexion {
+header nav .collapse ul .btn {
   border: none;
-  background-color: #969292;
-  padding: 10px;
-  border-radius: 6px;
+  background-color: #908c8c;
+  width: 130px;
+  height: 50px;
+  border-radius: 3px;
 }
 
-@media (max-width: 991.98px) {
-  header h1 {
-    font-size: 10px;
-  }
+ul #emporium2 {
+  font-weight: bold;
+  width: auto;
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  z-index: 1000;
+  border-bottom: 2px solid grey;
 }
 
 .banner {
@@ -20870,12 +20904,55 @@ header nav .collapse ul li .connexion {
   color: #DD4545;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner .container .col-8 .titreBanner {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner .container .col-8 .titreBanner {
+    font-size: 30px;
+    padding-left: 120px;
+    text-align: center;
+  }
+}
+
 .banner .container .col-8 p {
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner .container .col-8 p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner .container .col-8 p {
+    font-size: 20px;
+    padding-left: 100px;
+    text-align: center;
+  }
 }
 
 .banner .container .col-8 img {
   width: 400px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner .container .col-8 img {
+    width: 250px;
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner .container .col-8 img {
+    width: 150px;
+    margin-left: 100px;
+  }
 }
 
 .banner .container .col-8 button {
@@ -20884,15 +20961,67 @@ header nav .collapse ul li .connexion {
   border: none;
   border-radius: 50px;
   text-decoration: none;
-  z-index: 10;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner .container .col-8 button {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner .container .col-8 button {
+    margin-left: 120px;
+    width: 100px;
+  }
 }
 
 .banner .container .col-4 .slider {
   width: 400px;
 }
 
+@media (max-width: 767.98px) {
+  .banner .container .col-4 .slider {
+    display: none;
+  }
+}
+
+#connexion {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 700px;
+  height: 600px;
+  position: fixed;
+  left: 30vw;
+  top: 10vh;
+  z-index: 999;
+  display: none;
+  font-family: Poppins-Light;
+}
+
+#connexion i {
+  font-size: 24px;
+}
+
+#connexion .fb {
+  color: #4021f0df;
+}
+
+#connexion .snap {
+  color: #fbff26;
+}
+
 .imgService {
   width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .imgService {
+    display: block;
+    width: 1000px;
+    padding-left: 20px;
+  }
 }
 
 .imgService .a {
@@ -20907,6 +21036,12 @@ header nav .collapse ul li .connexion {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .imgService .a .service1 {
+    padding-top: 70px;
+  }
 }
 
 .imgService .a .service1 h2 {
@@ -20931,6 +21066,12 @@ header nav .collapse ul li .connexion {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .imgService .b .service2 {
+    padding-top: 70px;
+  }
 }
 
 .imgService .b .service2 h2 {
@@ -20973,30 +21114,85 @@ header nav .collapse ul li .connexion {
   padding-right: 15%;
 }
 
-.cartes .row {
+.cartes .container .row {
   display: flex;
   justify-content: center;
 }
 
-.cartes .row .col-4 div {
+.cartes .container .row .col-4 div {
   width: 98%;
 }
 
-.cartes .row .col-4 div .produit {
+.cartes .container .row .col-4 div .produit {
   position: relative;
+  overflow: hidden;
 }
 
-.cartes .row .col-4 div .produit img {
+@media (max-width: 767.98px) {
+  .cartes .container .row .col-4 div .produit {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.cartes .container .row .col-4 div .produit img {
   max-width: 100%;
-  transition: all 2s;
 }
 
-.cartes .row .col-4 div span {
+.cartes .container .row .col-4 div .produit:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.cartes .container .row .col-4 div .produit:hover::before {
+  content: "View Details";
+  position: absolute;
+  background-color: #000;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  bottom: 0;
+  animation: produit 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+}
+
+.cartes .container .row .col-4 div .produit:hover::after {
+  content: "Add to Card";
+  position: absolute;
+  background-color: #DD4545;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  bottom: 0;
+  animation: produit 0.5s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+  left: 50%;
+}
+
+.cartes .container .row .col-4 div span {
   font-weight: bold;
   font-size: 17px;
 }
 
-.cartes .row .col-4 div .row .col-6 button {
+@media (max-width: 991.98px) {
+  .cartes .container .row .col-4 div span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .col-4 div span {
+    font-size: 15px;
+  }
+}
+
+.cartes .container .row .col-4 div .row {
+  display: flex;
+}
+
+.cartes .container .row .col-4 div .row .col-6 button {
   height: 50px;
   width: 60px;
   border: none;
@@ -21004,12 +21200,50 @@ header nav .collapse ul li .connexion {
   margin: 5px 0;
 }
 
-.cartes .row .col-4 div .row .col-6 .row del span {
+@media (max-width: 991.98px) {
+  .cartes .container .row .col-4 div .row .col-6 button {
+    margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .col-4 div .row .col-6 button {
+    margin: auto;
+    height: 30px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .col-4 div .row .col-6 .promo {
+    display: flex;
+  }
+}
+
+.cartes .container .row .col-4 div .row .col-6 .promo del {
+  color: #545557;
+  opacity: 0.6;
+}
+
+.cartes .container .row .col-4 div .prix {
   font-size: 17px;
 }
 
-.cartes .row .col-4 div .row .col-6 .row span {
-  font-size: 17px;
+@media (max-width: 767.98px) {
+  .cartes .container .row .col-4 div .prix {
+    font-size: 12px;
+  }
+}
+
+@keyframes produit {
+  0% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 25%;
+  }
 }
 
 .discover {
@@ -21038,67 +21272,49 @@ header nav .collapse ul li .connexion {
   border-radius: 5px;
 }
 
-.carrousel .slider .produit .article {
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.hot {
+  color: #e01616;
 }
 
-.carrousel .slider .produit .article img {
-  max-width: 200px;
-}
-
-.carrousel .slider .produit .article .row .col-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.carrousel .slider .produit .article .row .col-6 button {
-  height: 40px;
-  width: 50px;
-  border: none;
-  border-radius: 50%;
-}
-
-.carrousel .slider .produit .article .row .col-6 span {
-  font-size: 13px;
-}
-
-.carrousel .slider .produit .article .row .col-6 span .text-capitalize {
-  font-size: 13px;
-}
-
-.carrousel .slider .produit .article .row .col-6 del {
-  font-size: 13px;
-  opacity: 0.6;
+.hot .container .carousel {
+  width: 60vw;
+  overflow: hidden;
 }
 
 .infos {
   margin-top: 50px;
 }
 
-.infos .row .col-4 .contenu {
+@media (max-width: 767.98px) {
+  .infos .row .carteInfo {
+    display: block;
+  }
+}
+
+.infos .row .carteInfo .contenu {
   height: 500px;
 }
 
-.infos .row .col-4 i {
+.infos .row .carteInfo i {
   font-size: 35px;
 }
 
-.infos .row .col-4 h2 {
+.infos .row .carteInfo h2 {
   font-size: 30px;
 }
 
-.infos .row .col-4 p {
+@media (max-width: 767.98px) {
+  .infos .row .carteInfo h2 {
+    text-align: center;
+  }
+}
+
+.infos .row .carteInfo p {
   font-size: 17px;
   padding: 0 auto 0 auto;
 }
 
-.infos .row .col-4 button {
+.infos .row .carteInfo button {
   height: 50px;
   width: 130px;
   border: none;
@@ -21110,16 +21326,51 @@ header nav .collapse ul li .connexion {
   margin-left: 400px;
 }
 
-.footer1 .row .col-4 p {
+@media (max-width: 767.98px) {
+  .footer1 .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer1 .row {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer1 .row .cont {
+    display: flex;
+    text-align: start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer1 .row .cont h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.footer1 .row .cont p {
   color: #9e9b9b;
   opacity: 0.8;
 }
 
-.footer1 .row .col-4 .btn {
+@media (max-width: 767.98px) {
+  .footer1 .row .cont p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.footer1 .row .cont .btn {
+  display: flex;
   align-items: start;
 }
 
-.footer1 .row .col-4 .btn button {
+.footer1 .row .cont .btn button {
   background-color: #343A40;
   border: solid 1px #9e9b9b;
   border-radius: 5px;
@@ -21134,15 +21385,8 @@ header nav .collapse ul li .connexion {
   font-size: 25px;
 }
 
-@media (max-width: 992px) {
-  .imgService .a .service1 {
-    height: auto;
-  }
-  .imgService .b .service2 {
-    height: auto;
-  }
-  .imgService .c .service3 {
-    height: 220px;
-    padding-top: 50px;
+@media (max-width: 767.98px) {
+  #end .copy {
+    font-size: 10px;
   }
 }

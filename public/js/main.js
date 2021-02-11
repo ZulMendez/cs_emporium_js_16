@@ -20,6 +20,7 @@ black.addEventListener('click', () => {
         element.style.color = "white"
     });
     titreFashion.style.color = "white"
+    header.style.backgroundColor = "white"
 })
 
 // WHITE MODE 
@@ -34,9 +35,58 @@ white.addEventListener('click', () => {
         element.style.color = "black"
     });
     titreFashion.style.color = "black"
+    header.style.backgroundColor = "black"
 })
 
-// MODAL
-let modal = document.querySelector('.modal');
-let formulaire = document.querySelector('.formulaire');
-let ferme = document.querySelector('')
+// navbar fixe 
+let header = document.getElementById("myHeader");
+let emporium2 = document.querySelector('#emporium2');
+
+// renvoie la distance entre l'élément courant et le haut du nœud offsetParent.
+let sticky = header.offsetTop;
+
+console.log(header);
+console.log(emporium1);
+console.log(emporium2);
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    emporium2.style.display = "flex"
+    emporium1.style.display = "none"
+  } else {
+    header.classList.remove("sticky");
+    emporium2.style.display = "none"
+    emporium1.style.display = "block"
+  }
+}
+window.onscroll = function() {myFunction()};
+
+
+// CAROUSEL
+
+let item1 = document.querySelector('.item1')
+let item2 = document.querySelector('.item2')
+let item3 = document.querySelector('.item3')
+let item4 = document.querySelector('.item4')
+let carou = document.querySelector('.carou')
+
+item1.addEventListener('click', () => {
+    carou.style.transform = "translateX(0%)"
+    carou.style.transition = "2s"
+})
+
+item2.addEventListener('click', () => {
+    carou.style.transform = "translateX(-300px)"
+    carou.style.transition = "2s"
+})
+
+item3.addEventListener('click', () => {
+    carou.style.transform = "translateX(-600px)"
+    carou.style.transition = "2s"
+})
+
+item4.addEventListener('click', () => {
+    carou.style.transform = "translateX(-900px)"
+    carou.style.transition = "2s"
+})

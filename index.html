@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +12,20 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header id="myHeader">
         <h1 id="emporium1" class="mb-5">emporium.</h1>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
             <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="listNavbar" class="navbar-nav">
+                    <li id="emporium2" class="m-0 p-0">
+                        <h1 id="h1" class="text-dark">emporium.</h1>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
@@ -45,7 +48,7 @@
                         <button id="white" class="ml-3"></button>
                         <button id="black" class="mr-3 ml-3"></button>
                     </li>
-                    <button type="button" class="btn btn-outline-secondary">CONNEXION</button>
+                    <button id="boutConnex" type="button" class="btn btn-outline-secondary">CONNECTION</button>
                 </ul>
             </div>
         </nav>
@@ -53,6 +56,77 @@
     </header>
     <!-- section 1 - banner  -->
     <section class="banner" id="section1">
+        <!-- modal connexion -->
+        <div id="connexion" class="co">
+            <!-- entete avec btn fermer  -->
+            <button class="fermer bg-rouge text-white float-right ">x</button>
+            <h1 class="font-weight-bold">emporium.</h1>
+            <div class=" d-flex justify-content-center align-items-center">
+                <button type="button" class="btn connexion btn-rouge mx-1 text-white">Connexion</button>
+                <button type="button" class="btn inscription btn-rouge text-white">Inscription</button>
+            </div>
+            <!-- PREMIER MODALE-->
+            <div class="modale1 p-2" id="modale1">
+                <div class="champ my-2 d-flex flex-column">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="**********" class="col-10">
+                        </div>
+                        <div class="submit my-2">
+                            <input type="checkbox" value="Check"> Check me out
+                        </div>
+                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                    </div>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- DEUXIEME MODALE -->
+            <div class="modale1 p-2 d-none" id="modale2">
+                <div class="champ my-2 d-flex flex-column align-items-center">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp my-2">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="confirm my-2">
+                            <h5>Confirm your password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="form-check my-2 ">
+                            <input type="checkbox" value="femme">
+                            <label for="form-check-label">Femme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="homme">
+                            <label for="form-check-label">Homme</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-8 col-sm-12 col-md-12 col-lg-8 d-flex flex-column justify-content-center">
@@ -64,60 +138,6 @@
                 </div>
                 <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
                     <img class="slider" src="./public/img/slider-1.jpg" alt="slider">
-                </div>
-            </div>
-            <!-- modale -->
-            <div class="row d-none">
-                <div class="modal col-12 col-sm-12 col-md-12 col-lg-12 mb-4 d-flex align-items-center justify-content-center">
-                    <div class="formulaire">
-                        <div class="row d-flex justify-content-end">
-                            <a id="ferme" href="" class="text-center"><i class="fas fa-times mt-3"></i></a>
-                        </div>
-                        <div class="row d-none d-flex flex-wrap justify-content-center">
-                            <div id="connecte" class="col-6 col-sm-12 col-md-12 col-lg-6 d-flex flex-column">
-                                <button id="sign" class="bg-white border-0 mt-5">Log in</button>
-                                <hr class="hr1">
-                                <input id="input1" type="text" placeholder="Email Address" class="inp1">
-                                <input id="input2" type="text" placeholder="Password" class="mt-3">
-                                <button id="btn1" class="bg-info border-0 mt-3 mr-auto">Log in</button>
-                                <hr class="hr2 mt-4 mb-4">
-                                <button id="btn2" class="bg-danger">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <i class="fab fa-google text-white mr-2"></i>
-                                        <p class="text-white">Connect with Google</p>
-                                    </div>
-                                </button>
-                                <button id="btn3" class="bg-primary mt-2 mb-5">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <i class="fab fa-facebook-f text-white mr-2"></i>
-                                        <p class="text-white">Connect with Facebook</p>
-                                    </div>
-                                </button>
-                            </div>
-                            <div id="inscrit" class="col-6 col-sm-12 col-md-12 col-lg-6 d-flex flex-column pb-5">
-                                <button id="inscription" class="bg-white border-0 mt-5">Register</button>
-                                <hr>
-                                <div class="row d-none">
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
-                                        <input class="b" type="text" placeholder="First Name">
-                                    </div>
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
-                                        <input class="a" type="text" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <input id="input" class="mt-3 d-none" type="text" placeholder="Email Address">
-                                <div id="row2" class="row d-none mt-3 mb-3">
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
-                                        <input class="c" type="text" placeholder="Password">
-                                    </div>
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg-6">
-                                        <input class="d" type="text" placeholder="Confirm Password">
-                                    </div>
-                                </div>
-                                <button id="btn" class="bg-info d-none text-white">Register</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -139,7 +159,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="c col-4 col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="c col-4 col-sm-4 col-md-12 col-lg-4 mt-5">
                     <div class="service3">
                         <h2 class="text-white text-center mt-5 mt-md-5">Clothes</h2>
                         <hr class="text-center mt-md-3">
@@ -161,7 +181,7 @@
                             <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa">
                         </div>
                         <span id="carte1" class="mt-3">Luxury Sofa</span>
-                        <span class="text-danger mt-1 mb-3">$600.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$600.00</span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -169,16 +189,16 @@
                         <div class="produit">
                             <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves">
                         </div>
-                        
-                        <div class="row d-flex">
+
+                        <div class="row">
                             <div class="col-6 d-flex justify-content-center align-items-center">
                                 <button class="bg-danger text-white text-uppercase mt-3">sale!</button>
                             </div>
                             <div class="col-6 d-flex flex-column justify-content-center align-items-start px-0">
                                 <span id="carte1" class="mt-3">Leather Gloves</span>
-                                <div class="row d-flex justify-content-start mx-0 align-items-center">
-                                    <span class="text-secondary mt-4 mr-1"><s>$34.00</s></span>
-                                    <span class="text-danger mt-1 ml-1 mb-4">$27.00</span>
+                                <div class="promo d-flex justify-content-start mx-0 align-items-center">
+                                    <del class="mb-4 mt-1"><span class="text-secondary mt-3 mr-1">$34.00</span></del>
+                                    <span class="prix text-danger mt-1 mb-4">$27.00</span>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +210,7 @@
                             <img src="./public/img/products_mini/product-cups.jpg" alt="cups">
                         </div>
                         <span id="carte1" class="mt-3">Colorful Bowl</span>
-                        <span class="text-danger mt-1 mb-3">$18.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$18.00</span>
                     </div>
                 </div>
 
@@ -200,15 +220,15 @@
                         <div class="produit">
                             <img src="./public/img/products_mini/product-bag.jpg" alt="bag">
                         </div>
-                        <div class="row d-flex">
+                        <div class="row">
                             <div class="col-6 d-flex justify-content-center align-items-center">
                                 <button class="bg-danger text-white text-uppercase mt-4">sale!</button>
                             </div>
                             <div class="col-6 d-flex flex-column justify-content-center align-items-start px-0">
                                 <span id="carte1" class="mt-3">Women Bag</span>
-                                <div class="row d-flex mx-0 justify-content-start align-items-center">
+                                <div class="promo d-flex mx-0 justify-content-start align-items-center">
                                     <del class="mb-4 mt-1"><span class="text-secondary mt-3 mr-1">$420.00</span></del>
-                                    <span class="text-danger mt-1 mb-4">$350.00</span>
+                                    <span class="prix text-danger mt-1 mb-4">$350.00</span>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +240,7 @@
                             <img src="./public/img/products_mini/product-tshitr.jpg" alt="tshirt">
                         </div>
                         <span id="carte1" class="mt-3">Minimal T-shirt</span>
-                        <span class="text-danger mt-1 mb-3">$15.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$15.00</span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -229,7 +249,7 @@
                             <img src="./public/img/products_mini/product-plates.jpg" alt="plates">
                         </div>
                         <span id="carte1" class="mt-3">Plates Set</span>
-                        <span class="text-danger mt-1 mb-3">$30.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$30.00</span>
                     </div>
                 </div>
 
@@ -240,7 +260,7 @@
                             <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="modern">
                         </div>
                         <span id="carte1" class="mt-3">Modern-Sofa</span>
-                        <span class="text-danger mt-1 mb-3">$900.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$900.00</span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -249,7 +269,7 @@
                             <img src="./public/img/products_mini/product-bed.jpg" alt="bed">
                         </div>
                         <span id="carte1" class="mt-3">Bed Linen</span>
-                        <span class="text-danger mt-1 mb-3">$79.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$79.00</span>
                     </div>
                 </div>
                 <div class="col-4">
@@ -258,7 +278,7 @@
                             <img src="./public/img/products_mini/product-shoes.jpg" alt="shoes">
                         </div>
                         <span id="carte1" class="mt-3">Minimal Shoes</span>
-                        <span class="text-danger mt-1 mb-3">$60.00</span>
+                        <span class="prix text-danger mt-1 mb-3">$60.00</span>
                     </div>
                 </div>
             </div>
@@ -272,128 +292,117 @@
     </section>
     <!-- fin section 4 - discover-->
     <!-- section 5 - carrousel -->
-    <section class="carrousel">
-        <h2 id="fashion" class="text-uppercase text-center mt-5 mb-5">Hot Fashion Products</h2>
-        <div class="container-fluid">
-            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
-                <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                    <div class="carousel-item col-md-3  active">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 1" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=1"
-                                        alt="slide 1">
-                                </a>
-                            </div>
-                        </div>
+    <section class="hot">
+        <h3 class="text-center" id="discover">Hot Fashion Products</h3>
+        <!-- CAROUSEL -->
+        <div class="container">
+            <div class="row carousel">
+                <div class="carou d-flex flex-nowrap">
+                    <div>
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="product-luxry-sofa"
+                            width="322" height="254">
+                        <p id="para1" class="mt-3">Luxury Sofa</p>
+                        <span class="mt-1 mb-3">$600.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 3" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=2"
-                                        alt="slide 2">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-gloves.jpg" alt="product-gloves" width="322"
+                            height="254">
+                        <p id="para1" class="mt-3">Leather Gloves</p>
+                        <span class="bg-rouge text-white text-uppercase mt-3">sale!</span>
+                        <span class="text-secondary mb-4  mr-1"><s>$34.00</s></span>
+                        <span class="text-rouge mt-1 mb-4">$27.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 4" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=3"
-                                        alt="slide 3">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-cups.jpg" alt="product-cups" width="322"
+                            height="254">
+                        <p id="para1" class="mt-3">Colorful Bowl</p>
+                        <span class="mt-1 mb-3">$18.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 5" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=4" -->
-                                        alt="slide 4">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-bag.jpg" alt="product-bag" width="322"
+                            height="254">
+                        <p id="para1" class="mt-3">Women Bag</p>
+                        <span class="bg-rouge text-white text-uppercase mt-4">sale!</span>
+                        <span class="text-secondary mb-4  mr-1"><s>$420.00</s></span>
+                        <span class="text-rouge mt-1 mb-4">$350.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 6" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=5"
-                                        alt="slide 5">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-tshitr.jpg" alt="product-tshitr" width="322"
+                            height="254">
+                        <span id="para1" class="mt-3">Minimal T-shirt</span>
+                        <span class="mt-1 mb-3">$15.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 7" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=6"
-                                        alt="slide 6">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-plates.jpg" alt="product-plates" width="322"
+                            height="254">
+                        <p id="para1" class="mt-3">Plates Set</p>
+                        <span class="mt-1 mb-3">$30.00</span>
                     </div>
-                    <div class="carousel-item col-md-3 ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 8" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=7"
-                                        alt="slide 7">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="product-modern-sofa"
+                            width="322" height="254">
+                        <span id="para1" class="mt-3">Modern-Sofa</span>
+                        <span class="mt-1 mb-3">$900.00</span>
                     </div>
-                    <div class="carousel-item col-md-3  ">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <a href="#" title="image 2" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/600x400?text=8"
-                                        alt="slide 8">
-                                </a>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-bed.jpg" alt="product-bed" width="322"
+                            height="254">
+                        <span id="para1" class="mt-3">Bed Linen</span>
+                        <span class="mt-1 mb-3">$79.00</span>
+                    </div>
+                    <div>
+                        <img src="./public/img/products_mini/product-shoes.jpg" alt="product-shoes" width="322"
+                            height="254">
+                        <p id="para1" class="mt-3">Minimal Shoes</p>
+                        <span class="mt-1 mb-3">$60.00</span>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button"
+                        class="btn item1 boutonCarou bout rounded-circle mx-1 btn-outline-danger p-2 ">
+                    </button>
+                    <button type="button"
+                        class="btn item2 boutonCarou bout rounded-circle mx-1 btn-outline-danger p-2 ">
+                    </button>
+                    <button type="button"
+                        class="btn item3 boutonCarou bout rounded-circle mx-1 btn-outline-danger p-2 ">
+                    </button>
+                    <button type="button"
+                        class="btn item4 boutonCarou bout rounded-circle mx-1 btn-outline-danger p-2 ">
+                    </button>
+                </div>
+            </div>
     </section>
     <!-- fin section 5 - carrousel  -->
     <!-- section 6 - infos -->
     <section id="section6 container" class="infos">
         <div class="row m-0 p-0">
-            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
+            <div class="carteInfo col-lg-3 col-md-4 col-sm-12 col-xs-12 mb-3">
                 <div class="contenu bg-banner d-flex flex-column justify-content-center align-items-center">
                     <i class="far fa-check-circle mb-5 mt-3"></i>
                     <h2 class="text-uppercase text-center mb-5">trusted by 10,000+ customers</h2>
-                    <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
+                    <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                        veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
                     <button class="mb-5 py-2 bg-secondary text-white text-uppercase">learn more</button>
                 </div>
             </div>
-            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
+            <div class="carteInfo col-lg-3 col-md-4 col-sm-12 col-xs-12 mb-3">
                 <div class="contenu bg-danger d-flex flex-column justify-content-center align-items-center">
                     <i class="fas fa-paper-plane text-white mb-5 mt-3"></i>
-                    <h2 class="text-uppercase text-white mb-5">very fast shipping</h2>
-                    <p class="text-center text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
+                    <h2 class="text-uppercase text-center text-white mb-5">very fast shipping</h2>
+                    <p class="text-center text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
                     <button class="mb-5 py-2 bg-white text-uppercase">learn more</button>
                 </div>
             </div>
-            <div class="col-4 col-sm-12 col-md-12 col-lg-4 mb-3">
+            <div class="carteInfo col-lg-3 col-md-4 col-sm-12 col-xs-12 mb-3">
                 <div class="contenu bg-banner d-flex flex-column justify-content-center align-items-center">
                     <i class="far fa-check-circle mb-5 mt-3"></i>
                     <h2 class="text-uppercase text-center mb-5">trusted by 10,000+ customers</h2>
-                    <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
+                    <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                        veniam reprehenderit a, perferendis quas cupiditate qui accusamus!</p>
                     <button class="mb-5 py-2 bg-secondary text-white text-uppercase">learn more</button>
                 </div>
             </div>
@@ -404,35 +413,39 @@
     <footer class="footer">
         <div class="footer1 bg-footer container-fluid d-flex justify-content-center">
             <div class="row">
-                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-md-5">about us</h4>
-                    <p class="mb-5">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of</p>
+                <div
+                    class="col-lg-5 col-md-12 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-md-5">about us</h4>
+                    <p class="mb-5">A wonderful serenity has taken possession of my entire soul, like these sweet
+                        mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
+                        existence in this spot, which was created for the bliss of</p>
                 </div>
-                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-5">recents posts</h4>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-5">recents posts</h4>
                     <p class="text-capitalize text-white mb-3">> hello world</p>
                     <p class="text-capitalize text-white mb-3">> wonderful serenity has taken</p>
                     <p class="text-capitalize text-white mb-3">> in my soul and absorb its power</p>
                     <p class="text-capitalize text-white mb-5">> i heard the buzz of the little</p>
                 </div>
-                <div class="col-4 col-sm-12 col-md-12 col-lg-4 d-flex align-items-start flex-column justify-content-center">
-                    <h4 class="text-uppercase text-white text-md-center mb-3 mt-5">tag cloud</h4>
-                    <div class="btn d-flex">
+                <div
+                    class="cont col-lg-4 col-md-6 mb-4 mb-md-0 d-flex align-items-start flex-column justify-content-center">
+                    <h4 class="text-uppercase text-white text-md-center text-sm-center mb-3 mt-5">tag cloud</h4>
+                    <div class="btn p-0 m-0">
                         <button class="px-2 py-1">business</button>
                         <button class="px-2 py-1">confidence</button>
                         <button class="px-2 py-1">gadgets</button>
                     </div>
-                    <div class="btn d-flex">
+                    <div class="btn p-0 m-0">
                         <button class="px-2 py-1">identity</button>
                         <button class="px-2 py-1">logo</button>
                         <button class="px-2 py-1">photography</button>
                     </div>
-                    <div class="btn d-flex">
+                    <div class="btn p-0 m-0">
                         <button class="px-2 py-1">time</button>
                         <button class="px-2 py-1">trips</button>
                         <button class="px-2 py-1">works</button>
                     </div>
-                    <div class="btn d-flex mb-3">
+                    <div class="btn p-0 m-0 mb-3">
                         <button class="px-2 py-1">work space</button>
                     </div>
                 </div>
@@ -443,25 +456,16 @@
                 <p class="copy text-uppercase mt-3">&copy; 2020 goodlayers, all right reserved</p>
             </div>
         </div>
-    </footer> 
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
     <!-- js -->
     <script src="./public/js/main.js"></script>
+    <script src="./public/js/modale.js"></script>
     <!-- script jquery -->
-    <!-- <script src="./node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <!-- script bootstrap -->
-    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
-    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
