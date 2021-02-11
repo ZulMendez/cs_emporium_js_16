@@ -6,7 +6,8 @@ let black = document.querySelector('#black');
 let emporium1 = document.querySelector('#emporium1');
 let titreCarte = document.querySelector('#titreCarte');
 let cartes = document.querySelectorAll('#carte1')
-let titreFashion = document.querySelector('#fashion');
+let titreHot = document.querySelector('#hot');
+let header = document.getElementById("myHeader");
 
 // DARK MODE
 black.addEventListener('click', () => {
@@ -19,8 +20,9 @@ black.addEventListener('click', () => {
     cartes.forEach(element => {
         element.style.color = "white"
     });
-    titreFashion.style.color = "white"
-    header.style.backgroundColor = "white"
+    titreHot.style.color = "white"
+    header.style.color = "white"
+    header.style.backgroundColor = "black"
 })
 
 // WHITE MODE 
@@ -34,12 +36,14 @@ white.addEventListener('click', () => {
     cartes.forEach(element => {
         element.style.color = "black"
     });
-    titreFashion.style.color = "black"
-    header.style.backgroundColor = "black"
+    titreHot.style.color = "black"
+    header.style.backgroundColor = "white"
 })
 
+console.log(black);
+console.log(white);
+
 // navbar fixe 
-let header = document.getElementById("myHeader");
 let emporium2 = document.querySelector('#emporium2');
 
 // renvoie la distance entre l'élément courant et le haut du nœud offsetParent.

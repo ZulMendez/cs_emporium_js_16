@@ -20811,6 +20811,12 @@ header h1 {
   font-size: 50px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header h1 {
+    display: none;
+  }
+}
+
 @media (max-width: 767.98px) {
   header h1 {
     display: none;
@@ -21276,8 +21282,25 @@ ul #emporium2 {
   color: #e01616;
 }
 
+.hot p, .hot span {
+  font-weight: bold;
+}
+
+.hot p {
+  padding-top: 20px;
+}
+
+.hot img {
+  height: 150px;
+}
+
+.hot button {
+  border-radius: 100%;
+  padding: 20px;
+}
+
 .hot .container .carousel {
-  width: 60vw;
+  width: 50vw;
   overflow: hidden;
 }
 
