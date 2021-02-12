@@ -73,24 +73,24 @@ let item1 = document.querySelector('.item1')
 let item2 = document.querySelector('.item2')
 let item3 = document.querySelector('.item3')
 let item4 = document.querySelector('.item4')
-let carou = document.querySelector('.carou')
+let carrou = document.querySelector('.carrou')
 
 item1.addEventListener('click', () => {
-    carou.style.transform = "translateX(0%)"
-    carou.style.transition = "2s"
+    carrou.style.transform = "translateX(0%)"
+    carrou.style.transition = "2s"
 })
 
 item2.addEventListener('click', () => {
-    carou.style.transform = "translateX(-300px)"
-    carou.style.transition = "2s"
+    carrou.style.transform = "translateX(-300px)"
+    carrou.style.transition = "2s"
 })
 
 item3.addEventListener('click', () => {
-    carou.style.transform = "translateX(-600px)"
-    carou.style.transition = "2s"
+    carrou.style.transform = "translateX(-600px)"
+    carrou.style.transition = "2s"
 })
 
 item4.addEventListener('click', () => {
-    carou.style.transform = "translateX(-900px)"
-    carou.style.transition = "2s"
+    carrou.style.transform = "translateX(-900px)"
+    carrou.style.transition = "2s"
 })
