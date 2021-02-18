@@ -5,43 +5,50 @@
         .row
             display: flex
             justify-content: center
+            @include media-breakpoint-down(sm)
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
             .col-4
                     div
-                        width: 98%
+                        width: 100%
                         .produit
                             position: relative
                             overflow: hidden
                             @include media-breakpoint-down(sm)
-                                width: 80px
-                                height: 80px
+                                width: 100px
+                                height: 100px
                             img
                                 max-width: 100%
-                            &:hover
-                                transform: scale(1.1)
-                                transition: all 1s
-                                &::before
-                                    content: "View Details"
-                                    position: absolute
-                                    background-color: #000
-                                    text-align: center
-                                    color: white
-                                    opacity: 0.8
-                                    bottom: 0
-                                    animation: produit 0.5s 
-                                    animation-fill-mode: forwards
-                                    max-width: 50%
-                                &::after
-                                    content: "Add to Card"
-                                    position: absolute
-                                    background-color: #DD4545
-                                    text-align: center
-                                    color: white
-                                    opacity: 0.8
-                                    bottom: 0
-                                    animation: produit 0.5s 
-                                    animation-fill-mode: forwards
-                                    max-width: 50%
-                                    left: 50%
+                                &:hover
+                                    transform: scale(1.1)
+                                    transition: all 1s
+                            &::before
+                                content: "View Details"
+                                position: absolute
+                                background-color: #000
+                                text-align: center
+                                color: white
+                                opacity: 0.8
+                                bottom: 0
+                                max-width: 50%
+                                animation: produit 0.5s 
+                                animation-fill-mode: forwards
+                            &::after
+                                content: "Add to Card"
+                                position: absolute
+                                background-color: #DD4545
+                                text-align: center
+                                color: white
+                                opacity: 0.8
+                                bottom: 0
+                                max-width: 50%
+                                left: 50%
+                                animation: produit 0.5s 
+                                animation-fill-mode: forwards
+                                // &:hover
+                                            
                         span
                             font-weight: bold
                             font-size: 17px
@@ -75,7 +82,7 @@
                             font-size: 17px
                             @include media-breakpoint-down(sm)
                                 font-size: 12px
-                                    // .prix 
+                                    // .prix2 
                                     //     font-size: 17px
                                     //     @include media-breakpoint-down(sm)
                                     //         font-size: 12px

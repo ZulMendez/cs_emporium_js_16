@@ -1,7 +1,7 @@
 header
     h1
         text-align: center
-        font-size: 50px
+        font-size: 60px
         @include media-breakpoint-only(md)
             padding-top: 30px
             font-size: 80px
@@ -10,6 +10,9 @@ header
             display: none
 
     nav
+        display: flex
+        align-items: center
+        justify-content: center
         @include media-breakpoint-only(md)
             padding: 20px 0
         .navbar-toggler
@@ -43,6 +46,7 @@ header
                     width: 130px
                     height: 50px
                     border-radius: 3px
+                    margin-top: 8px
 ul
                 #emporium2
                     font-weight: bold
@@ -56,4 +60,4 @@ ul
     width: 100%
     background-color: #f3f3f3
     z-index: 1000
-    border-bottom: 2px solid grey 
+    border-bottom: 1px solid grey 

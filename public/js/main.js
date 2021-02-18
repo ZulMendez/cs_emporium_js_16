@@ -1,4 +1,4 @@
-let body = document.querySelector('body');
+// let body = document.querySelector('body');
 
 let listNavbar = document.querySelectorAll('.nav-link');
 let white = document.querySelector('#white');
@@ -8,7 +8,8 @@ let titreCarte = document.querySelector('#titreCarte');
 let cartes = document.querySelectorAll('#carte1')
 let titreHot = document.querySelector('#hot');
 let header = document.getElementById("myHeader");
-
+let para = document.querySelectorAll('#listHot')
+console.log(para);
 // DARK MODE
 black.addEventListener('click', () => {
     document.body.style.backgroundColor = "black";
@@ -21,6 +22,9 @@ black.addEventListener('click', () => {
         element.style.color = "white"
     });
     titreHot.style.color = "white"
+    para.forEach(element => {
+        element.style.color = "white"
+    });
     header.style.color = "white"
     header.style.backgroundColor = "black"
 })
@@ -37,6 +41,9 @@ white.addEventListener('click', () => {
         element.style.color = "black"
     });
     titreHot.style.color = "black"
+    para.forEach(element => {
+        element.style.color = "black"
+    });
     header.style.backgroundColor = "white"
 })
 
@@ -45,7 +52,6 @@ console.log(white);
 
 // navbar fixe 
 let emporium2 = document.querySelector('#emporium2');
-
 // renvoie la distance entre l'élément courant et le haut du nœud offsetParent.
 let sticky = header.offsetTop;
 
@@ -58,6 +64,7 @@ function myFunction() {
     header.classList.add("sticky");
     emporium2.style.display = "flex"
     emporium1.style.display = "none"
+    modal.style = "z-index: 1000"
   } else {
     header.classList.remove("sticky");
     emporium2.style.display = "none"
