@@ -21264,76 +21264,81 @@ ul #emporium2 {
   width: 100%;
 }
 
-.cartes .container .row .col-4 div .produit {
+.cartes .container .row .col-4 .divImg {
+  display: block;
   position: relative;
   overflow: hidden;
 }
 
-@media (max-width: 767.98px) {
-  .cartes .container .row .col-4 div .produit {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.cartes .container .row .col-4 div .produit img {
+.cartes .container .row .col-4 .divImg img {
   max-width: 100%;
+  transition: transform 0.5s;
+  position: relative;
 }
 
-.cartes .container .row .col-4 div .produit img:hover {
+.cartes .container .row .col-4 .divImg img:hover {
   transform: scale(1.1);
-  transition: all 1s;
 }
 
-.cartes .container .row .col-4 div .produit::before {
-  content: "View Details";
+.cartes .container .row .col-4 .divImg .divEtiquette {
   position: absolute;
-  background-color: #000;
-  text-align: center;
-  color: white;
-  opacity: 0.8;
-  bottom: 0;
-  max-width: 50%;
-  animation: produit 0.5s;
-  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  bottom: -20%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
-.cartes .container .row .col-4 div .produit::after {
-  content: "Add to Card";
-  position: absolute;
-  background-color: #DD4545;
-  text-align: center;
+.cartes .container .row .col-4 .divImg .divEtiquette div {
   color: white;
-  opacity: 0.8;
-  bottom: 0;
-  max-width: 50%;
-  left: 50%;
-  animation: produit 0.5s;
-  animation-fill-mode: forwards;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
-.cartes .container .row .col-4 div span {
+.cartes .container .row .col-4 .divImg .divEtiquette div:nth-child(1) {
+  background-color: black;
+  width: 50%;
+}
+
+.cartes .container .row .col-4 .divImg .divEtiquette div:nth-child(2) {
+  background-color: red;
+  width: 50%;
+}
+
+.cartes .container .row .col-4 .divImg:hover .divEtiquette {
+  opacity: 0.7;
+  bottom: 0;
+}
+
+.cartes .container .row span {
   font-weight: bold;
   font-size: 17px;
 }
 
 @media (max-width: 991.98px) {
-  .cartes .container .row .col-4 div span {
+  .cartes .container .row span {
     font-size: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .cartes .container .row .col-4 div span {
+  .cartes .container .row span {
     font-size: 15px;
   }
 }
 
-.cartes .container .row .col-4 div .row {
+.cartes .container .row .row {
   display: flex;
 }
 
-.cartes .container .row .col-4 div .row .col-6 button {
+.cartes .container .row .row .col-6 button {
   height: 50px;
   width: 60px;
   border: none;
@@ -21342,13 +21347,13 @@ ul #emporium2 {
 }
 
 @media (max-width: 991.98px) {
-  .cartes .container .row .col-4 div .row .col-6 button {
+  .cartes .container .row .row .col-6 button {
     margin: auto;
   }
 }
 
 @media (max-width: 767.98px) {
-  .cartes .container .row .col-4 div .row .col-6 button {
+  .cartes .container .row .row .col-6 button {
     margin: auto;
     height: 30px;
     width: 40px;
@@ -21356,34 +21361,23 @@ ul #emporium2 {
 }
 
 @media (max-width: 767.98px) {
-  .cartes .container .row .col-4 div .row .col-6 .promo {
+  .cartes .container .row .row .col-6 .promo {
     display: flex;
   }
 }
 
-.cartes .container .row .col-4 div .row .col-6 .promo del {
+.cartes .container .row .row .col-6 .promo del {
   color: #545557;
   opacity: 0.6;
 }
 
-.cartes .container .row .col-4 div .prix {
+.cartes .container .row .prix {
   font-size: 17px;
 }
 
 @media (max-width: 767.98px) {
-  .cartes .container .row .col-4 div .prix {
+  .cartes .container .row .prix {
     font-size: 12px;
-  }
-}
-
-@keyframes produit {
-  0% {
-    width: 100%;
-    height: 0%;
-  }
-  100% {
-    width: 100%;
-    height: 25%;
   }
 }
 
